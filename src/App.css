@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.a{
+    background-color: blue;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b{
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 5px;
+}
+.c{
+    background-color: yellow;
+}
+/* @media screen (min-width:500px){
+    .a{
+        background-color:red;
+    }
+    
+} */
+@media screen and (max-width: 500px) {
+    .a {
+        background-color: red;
+        font-size: larger;
+        flex-direction: column;
+    }
+    .a:hover{
+        cursor: pointer;
+        color:burlywood;
+        
+    }
+}
+@keyframes a {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Applying the animation */
+.animated {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;  /* ✅ Needed for translate to work */
+    animation: a 2s ease-in-out infinite alternate;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.k{
+    background-color: yellow;
+    color:red;
 }
