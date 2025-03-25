@@ -63,7 +63,7 @@ const App = () => {
     <div style={ {background:"blue", margin:"20px"}}>
       <Learn>
         <h1>This is first</h1>hello</Learn>
-      <Learn><h2>This is second</h2>hello 2</Learn>
+      <Learn><button>This is second</button>hello 2</Learn>
       <Learn><h3>This is third</h3>hello 3</Learn>
     </div>
   )
