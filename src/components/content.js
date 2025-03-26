@@ -5,7 +5,17 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import { useState } from 'react';
 const Contents = () => {
+  
+  const[count, setCount]=useState(1);
+  const Increase=()=>{
+    setCount(count + 1);
+  };
+  
+  const Decrease=()=>{
+    setCount(count-1);
+  };
   return (
     <>
      <div className='b'>
@@ -30,7 +40,12 @@ const Contents = () => {
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
     </Form>
-     <Button variant="success">Success</Button>
+    <div className='k'>
+    <h1>{count}</h1>
+     <Button variant="success" onClick={Increase}>Increase</Button>
+     <Button variant="danger" onClick={Decrease}>Decrease</Button>
+    
+    </div>
     
      </>
    

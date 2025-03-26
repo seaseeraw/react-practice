@@ -12,3 +12,10 @@
     margin: 30px;
     border-radius: 10px;
 }
+.k h1{
+    color: blue;
+    background-color: rgb(95, 165, 42);
+    width: 20%;
+   border-radius: 5rem;
+   text-align: center;
+}
