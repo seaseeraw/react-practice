@@ -1,56 +1,14 @@
 .a{
     background-color: blue;
-    min-height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: brown;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 50px;
 }
 .b{
-
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 5px;
-}
-.c{
-    background-color: yellow;
-}
-/* @media screen (min-width:500px){
-    .a{
-        background-color:red;
-    }
-    
-} */
-@media screen and (max-width: 500px) {
-    .a {
-        background-color: red;
-        font-size: larger;
-        flex-direction: column;
-    }
-    .a:hover{
-        cursor: pointer;
-        color:burlywood;
-        
-    }
-}
-@keyframes a {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100px);
-    }
-}
-
-/* Applying the animation */
-.animated {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    position: relative;  /* ✅ Needed for translate to work */
-    animation: a 2s ease-in-out infinite alternate;
-}
-.k{
-    background-color: yellow;
-    color:red;
+    background-color: pink;
+    min-height: 50vh;
+    margin: 30px;
+    border-radius: 10px;
 }
