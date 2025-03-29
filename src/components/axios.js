@@ -1,17 +1,18 @@
 import { useState } from "react";
+import '../App.css';
 import axios from "axios";
 
-const Usersgit = () => {
+const UsersList = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [showUsers, setShowUsers] = useState(false); // Controls visibility
+  const [showUsers, setShowUsers] = useState(false);
 
   const fetchUsers = () => {
     setLoading(true);
-    axios.get("https://jsonplaceholder.typicode.com/users")
+    axios.get("/data.json") // Fetch from local JSON file
       .then((response) => {
         setUsers(response.data);
-        setShowUsers(true); // Show users only after fetching
+        setShowUsers(true);
       })
       .catch((error) => console.error("Error fetching users:", error))
       .finally(() => setLoading(false));
@@ -37,4 +38,4 @@ const Usersgit = () => {
   );
 };
 
-export default Users;
+export default UsersList;
